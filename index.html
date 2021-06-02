@@ -4,37 +4,33 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" media="screen and (max-width: 375px)" href="styleMobile.css">
+
+  <link rel="stylesheet" media="screen and (min-width: 360px) and (max-width: 1439px)" href="styleMobile.css">
   <link rel="stylesheet" media="screen and (min-width: 1440px)" href="styleDesktop.css">
 
   <title>Frontend Mentor | Stats preview card component</title>
 </head>
 <body>
   <div id="card">
-
-    <img src="images/image-header-mobile.jpg" alt="People sitting at computers typing">
-
-    <h1 id="heading">Get <span>insights</span> that help your business grow.</h1>
-      <p id="contents">Discover the benefits of data analytics and make better decisions regarding revenue, customer 
-    experience, and overall efficiency.</p> 
-
-    <h2 class="stath">10k+</h2>
-      <p class="statp">COMPANIES</p>
-    <h2 class="stath">314</h2> 
-      <p class="statp">TEMPLATES</p>
-    <h2 class="stath">12M+</h2> 
-      <p class="statp">QUERIES</p>
-
+    <div id = "imageContainer">
+      <img id="image1" src="images/image-header-mobile.jpg" alt="People sitting at computers typing">
+      <img id="image2" src="images/image-header-desktop.jpg" alt="People sitting at computers typing">
+    </div>
+    <div id="contentContainer">
+      <h1 id="heading">Get <span>insights</span> that help your business grow.</h1>
+        <p id="contents">Discover the benefits of data analytics and make better decisions regarding revenue, customer 
+      experience, and overall efficiency.</p> 
+      <div id="statContainer">
+        <h2 class="stath" id= "nuM1">10k+</h2>
+          <p class="statp" id= "nuM1id">COMPANIES</p>
+        <h2 class="stath" id= "nuM2">314</h2> 
+          <p class="statp" id= "nuM2id">TEMPLATES</p>
+        <h2 class="stath" id= "nuM3">12M+</h2> 
+          <p class="statp" id= "nuM3id">QUERIES</p>
+      </div>    
+    </div>
   </div>
 
-  <div class="attribution">
-    <p>
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>
-    </p> 
-    <p>
-    Coded by <a href="#">Andrew Humphries</a>
-    </p>
   </div>
 </body>
 </html>
