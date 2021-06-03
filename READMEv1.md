@@ -52,9 +52,9 @@ Users should be able to:
 
 ### What I learned
 
-CSS is something I have had some issue's grasping but the below items were difficult for me to graps. I am more of a visual learner so one would think CSS would be easy to grasp. However I believe I have a good handle on it because of this project. Especially Grid and Flexbox.
+CSS is something I have had some issue's grasping however with the completion of this project it has helped me progress. I am more of a visual learner so one would think CSS would be easy for me. This project was a wake up to solving problems and finding solutions which in turn has helped make CSS easier to understand.
 
- - It took me a while to figure out how to do an overlay of a color over the image. I used the stackoverflow question [here](https://stackoverflow.com/questions/9182978/semi-transparent-color-layer-over-background-image) to get this answer. I believe there is a better way to do this but this is the solution I found so far. Code snippet below from Mobile Style Sheet:
+ - It took me a while to figure out how to do an overlay of a color on an image. I used the stackoverflow question [here](https://stackoverflow.com/questions/9182978/semi-transparent-color-layer-over-background-image) to get this answer. I believe there is a better way to do this but this is the solution I found so far. Code snippet below from Mobile Style Sheet:
 
 
 ```css
@@ -102,9 +102,7 @@ CSS is something I have had some issue's grasping but the below items were diffi
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+In the future I want to learn to use React and Javascript in order to broaden my skills.
 
 ### Useful resources
 
