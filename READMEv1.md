@@ -16,7 +16,6 @@ This is a solution to the [Stats preview card component challenge on Frontend Me
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
@@ -28,15 +27,14 @@ Users should be able to:
 
 ### Screenshot
 
+- Desktop Solution - 1440 Width
+
 ![Screenshot](./mymimicdesgin/Desktop1440x800.png)
 
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
+- Mobile Solution - 375px Width
 
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
+![Screenshot](./mymimicdesgin/Mobile375px.png)
 
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
 
 ### Links
 
@@ -51,35 +49,56 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+CSS is something I have had some issue's grasping but the below items were difficult for me to graps. I am more of a visual learner so one would think CSS would be easy to grasp. However I believe I have a good handle on it because of this project. Especially Grid and Flexbox.
 
-To see how you can add code snippets, see below:
+ - It took me a while to figure out how to do an overlay of a color over the image. I used the stackoverflow question [here](https://stackoverflow.com/questions/9182978/semi-transparent-color-layer-over-background-image) to get this answer. I believe there is a better way to do this but this is the solution I found so far. Code snippet below from Mobile Style Sheet:
 
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
+
 ```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
+#imageContainer:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: hsl(277, 78%, 30%, 0.63);
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
 }
 ```
 
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
+- Flexbox was something I mainly used for this project and I would Highly recommend [this](https://css-tricks.com/snippets/css/a-guide-to-flexbox/#background) guide. This gave me a visual of what flexbox does and it was so helpful. Code snippet below from Mobile Style Sheet:
 
-**Note: Delete this note and the content within this section and replace with your own learnings.**
+```css
+#imageContainer{
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+```
+- I did use Grid as well and again [this](https://css-tricks.com/snippets/css/complete-guide-grid/) site was a great visual representation of what the different syntax do to the items. Code snippet below from Desktop Style Sheet:
+
+```css
+#statContainer{
+	display: grid;
+	grid-template:
+    'auto auto auto'
+    'auto auto auto';
+}
+#nuM1{order: 1;}
+#nuM2{order: 2;}
+#nuM3{order: 3;}
+#nuM1id{order: 4;}
+#nuM2id{order: 5;}
+#nuM3id{order: 6;}
+```
+
 
 ### Continued development
 
@@ -89,21 +108,14 @@ Use this section to outline areas that you want to continue focusing on in futur
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+- [Flexbox Resource](https://css-tricks.com/snippets/css/a-guide-to-flexbox/#background) - This helped me for Flexbox and has amazing visuals.
+- [Grid Resource](https://css-tricks.com/snippets/css/complete-guide-grid/) - This helped me for Grid and has amazing visuals.
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Portfolio - [Andrew Humphries](https://jehutymsms.github.io/)
 
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
 
 ## Acknowledgments
 
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+I would like to thank Odin Project for setting me on this path and giving me the confidence to try this project. 
